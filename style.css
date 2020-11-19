@@ -40,18 +40,61 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0 0.5em;
+  box-shadow: 0.5px 0.5px 2px rgb(184, 181, 181);
 }
 
-.nav2 ul {
-  border: 1px solid gray;
-}
 .nav2 a {
   color: grey;
   padding: 1em;
 }
 
 .nav2 button {
+  height: 100%;
   background: transparent;
   padding: 1em;
-  border: 1px solid gray;
+  border: 0;
+  box-shadow: -0.5px 0 2px rgb(184, 181, 181);
+}
+
+/* Header*/
+
+header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "article1 article1 article2"
+  "article1 article1 article3";
+  grid-gap: 10px;
+  border: solid 1px gray;
+}
+
+.article1 {
+  grid-area: article1;
+  background-image: url(./assets/main-article-img1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.article2 {
+  grid-area: article2;
+  background-image: url(./assets/main-article-img2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.article3 {
+  grid-area: article3;
+  background-image: url(./assets/main-article-img3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.article1-top {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.article1-top img {
+  color: white;
+  background-color: white;
 }
