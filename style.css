@@ -1,0 +1,57 @@
+body a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+.nav1 {
+  background-color: black;
+  height: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1em;
+}
+
+.nav1 ul,
+.nav2 ul {
+  display: flex;
+}
+
+.nav1 a{
+  color: gray;
+  padding: 0.5em;
+}
+
+.nav1 a:hover {
+  color: white;
+}
+
+#nav1-news {
+  color: white;
+}
+
+.nav2 {
+  height: 3em;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5em;
+}
+
+.nav2 ul {
+  border: 1px solid gray;
+}
+.nav2 a {
+  color: grey;
+  padding: 1em;
+}
+
+.nav2 button {
+  background: transparent;
+  padding: 1em;
+  border: 1px solid gray;
+}
