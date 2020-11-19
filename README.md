@@ -16,7 +16,7 @@ This project aims to create a Heat Map of the page SmashingMagazine.com, The pag
 
 ## Live Demo
 
-[Live Demo Link](https://dsunilk.github.io/Smashingmagazine-Clone/.)
+[Live Demo Link](https://marilirulita.github.io/The-Next-Web-Clone/.)
 
 👤 **Mar y Sol Bautista**
 
