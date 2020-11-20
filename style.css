@@ -68,17 +68,51 @@ header {
   border: solid 1px gray;
 }
 
+.article {
+  padding: 20px;
+}
 .article1 {
   grid-area: article1;
-  background-image: url(./assets/main-article-img1.png);
-  background-repeat: no-repeat;
+  background: transparent url(./assets/main-article-img1.png) no-repeat;
+  mix-blend-mode: lighten;
   background-size: cover;
+  display: grid;
+  grid-template-areas: "cover-grid cover-grid"
+  "cover-grid cover-grid";
 }
+
+.cover-grad-img {
+    background: transparent url(./assets/cover-gradient.png) no-repeat;
+}
+
+.cover-grad {
+  grid-area: cover-grid;
+  mix-blend-mode: lighten;
+  z-index: 5;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.article1 h2 {
+  font-size: 55px;
+  color: white;
+}
+
+.article a {
+  color: white;
+}
+
 .article2 {
   grid-area: article2;
   background-image: url(./assets/main-article-img2.png);
   background-repeat: no-repeat;
   background-size: cover;
+  display: grid;
+  grid-row: 1fr 1fr;
+  grid-template-areas: "cover-grid"
+  "cover-grid";
 }
 
 .article3 {
