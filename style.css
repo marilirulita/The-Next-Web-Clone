@@ -425,15 +425,15 @@ height: 60%;
   border-bottom: 0.4px solid rgb(245, 243, 243);
   margin: 5px 16px;
   padding: 5px 0;
-  
+
 }
 
 .section3-div-list li::before {
   display: inline-block;
   content: "\2022";
-  color: red; 
+  color: red;
   width: 1em;
-  margin-left: -1em; 
+  margin-left: -1em;
 }
 
 li::marker {
@@ -476,4 +476,51 @@ li::marker {
 }
 .article-img9 {
   background: url(./assets/main-section5-img3.png);
+}
+
+.big-tag {
+  font-size: 17px;
+  font-weight: bold;
+  color: #403d3d;
+  margin: 0;
+  padding-left: 5px;
+}
+.flex-div {
+  display: flex;
+  align-items: baseline;
+}
+
+footer a {
+  color: #AAAAAA;
+  font-size: 13px;
+}
+
+.footer-top {
+  background-color: #131313;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-bottom {
+  background-color: black;
+  color: #AAAAAA;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-top-icons {
+  display: flex;
+}
+
+.footer-top-icons li {
+  padding: 30px 5px;
+}
+
+.white1 {
+  color: white;
+  text-transform: uppercase;
 }
