@@ -5,11 +5,24 @@ body {
 body a {
   text-decoration: none;
 }
-
 nav {
   display: flex;
-  flex-direction: column;
+  width: 100%;
 }
+
+.nav-div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/*code for ipad screen */
+.hidden-logo {
+  display: none;
+  visibility: hidden;
+}
+/*code for ipad screen */
+
 .nav1 {
   background-color: black;
   height: 2em;
@@ -27,6 +40,7 @@ nav {
 .nav1 a{
   color: gray;
   padding: 0.5em;
+  white-space: nowrap;
 }
 
 .nav1 a:hover {
@@ -50,6 +64,7 @@ nav {
 .nav2 a {
   color: grey;
   padding: 1em;
+  white-space: nowrap;
 }
 
 .nav2 button {
@@ -63,9 +78,10 @@ nav {
 /* Header*/
 
 header {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, minmax(100px, 200px));
   grid-template-areas: "article1 article1 article2"
   "article1 article1 article3";
   grid-gap: 10px;
@@ -75,6 +91,7 @@ header {
 .article {
   padding: 20px;
 }
+
 .article1 {
   grid-area: article1;
   background: transparent url(./assets/main-article-img1.png);
@@ -98,10 +115,11 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
 }
 
 .article1 h2 {
-  font-size: 55px;
+  font-size: 3em;
   color: white;
 }
 
@@ -135,6 +153,8 @@ header {
   display: flex;
   justify-content: space-between;
   color: white;
+  width: auto;
+  height: auto;
 }
 
 .article1-top img {
@@ -535,9 +555,39 @@ background-color:#131313;
 
 .footer-bottom-icons li {
   padding: 30px 5px;
-  
+
 }
 .white1 {
   color: white;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 1025px) {
+  .cover-grad-img {
+    background: transparent;
+  }
+  .article1-top {
+    display: none;
+  }
+}
+
+/* Ipad rezize */
+
+/*
+@media screen and (max-width: 768px) {
+
+  .hidden-logo {
+    visibility: visible;
+    background-color: black;
+    padding: 25px;
+    float: left;
+  }
+  .nav-1-right {
+    visibility: hidden;
+  }
+
+  .hiden {
+    display: none;
+  }
+
 }
