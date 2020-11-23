@@ -19,7 +19,6 @@ nav {
 /*code for ipad screen */
 .hidden-logo {
   display: none;
-  visibility: hidden;
 }
 /*code for ipad screen */
 
@@ -98,6 +97,7 @@ header {
   background-repeat: no-repeat;
   mix-blend-mode: lighten;
   background-size: cover;
+  box-shadow:inset 70px 70px 70px 70px rgba(0, 0, 0, 1);
   display: grid;
   grid-template-areas: "cover-grid cover-grid"
   "cover-grid cover-grid";
@@ -132,6 +132,7 @@ header {
   background-image: url(./assets/main-article-img2.png);
   background-repeat: no-repeat;
   background-size: cover;
+  box-shadow:inset 70px 70px 70px 70px rgba(0, 0, 0, 0.7);
   display: grid;
   grid-row: 1fr 1fr;
   grid-template-areas: "cover-grid"
@@ -173,7 +174,9 @@ header {
 /* Main*/
 
 .section1-title {
-    padding: 20px 5%;
+    padding: 20px 5px;
+    max-width: 1150px;
+    margin: 0 auto;
 }
 
 .section1-title a {
@@ -187,11 +190,12 @@ header {
 
 .section1 {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 20px;
   margin: 0 auto;
-  padding: 10px 5%;
+  padding: 10px 5px;
+  max-width: 1150px;
 }
 
 .section1-div img {
@@ -224,7 +228,9 @@ height: 60%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 5%;
+  padding: 20px 5px;
+  margin: 0 auto;
+  max-width: 1150px;
 }
 
 .section2-top a {
@@ -253,10 +259,11 @@ height: 60%;
 
 .section2 {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill,minmax(250px, 1fr));
   grid-gap: 20px;
+  padding: 10px 5px;
   margin: 0 auto;
-  padding: 10px 5%;
+  max-width: 1150px;
 }
 
 .section2-grid {
@@ -347,11 +354,12 @@ height: 60%;
 
 .section3 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill,minmax(350px, 1fr));
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 20px;
   margin: 0 auto;
-  padding: 10px 5%;
+  padding: 10px 5px;
+  max-width: 1150px;
 }
 
 .section3-div-article1 {
@@ -573,14 +581,14 @@ background-color:#131313;
 
 /* Ipad rezize */
 
-/*
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 1025px) {
 
   .hidden-logo {
-    visibility: visible;
+    display: inherit;
     background-color: black;
-    padding: 25px;
-    float: left;
+    padding: 20px;
+    max-width: 100px;
   }
   .nav-1-right {
     visibility: hidden;
