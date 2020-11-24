@@ -20,6 +20,9 @@ nav {
 .hidden-logo {
   display: none;
 }
+.hidde-hambur {
+  display: none;
+}
 /*code for ipad screen */
 
 .nav1 {
@@ -190,7 +193,7 @@ header {
 
 .section1 {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 20px;
   margin: 0 auto;
@@ -259,7 +262,7 @@ height: 60%;
 
 .section2 {
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
   grid-gap: 20px;
   padding: 10px 5px;
   margin: 0 auto;
@@ -570,6 +573,15 @@ background-color:#131313;
   text-transform: uppercase;
 }
 
+/*generic medias */
+
+@media screen and (max-width: 1210px) {
+  .hiden {
+    display: none;
+    /*Check later */
+    visibility: hidden;
+  }
+}
 @media screen and (max-width: 1025px) {
   .cover-grad-img {
     background: transparent;
@@ -577,25 +589,76 @@ background-color:#131313;
   .article1-top {
     display: none;
   }
-}
-
-/* Ipad rezize */
-
-
-@media screen and (max-width: 1025px) {
-
   .hidden-logo {
     display: inherit;
     background-color: black;
     padding: 20px;
     max-width: 100px;
   }
+  .section2-top {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px;
+  }
+  .section2-top > * {
+    padding: 5px 0;
+  }
+  .section2-top-right {
+    padding-left: -5px;
+  }
+  .hiden-article {
+    display: none;
+  }
+}
+@media screen and (max-width: 786px) {
   .nav-1-right {
     visibility: hidden;
   }
-
-  .hiden {
+  .nav1 {
     display: none;
   }
+  .hidden-logo {
+    padding: 15px 20px;
+    max-width: 100px;
+  }
+  .nav2 ul {
+    display: none;
+  }
+  .search-icon {
+    float: right;
+  }
+  .hidde-hambur {
+    display: inherit;
+    background-color: black;
+    max-width: 50px;
+  }
+  header {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 150px);
+    grid-template-areas: "article1"
+    "article2"
+    "article3";
+  }
 
+  .section1 {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 100px;
+  }
+
+  .section1-div {
+    display: flex;
+  }
+
+  .section1-div div {
+    display: flex;
+    flex-direction: column;
+  }
+  .section1-div img {
+  width: 85px;
+  height: 85px;
+  }
+
+  .section1-div h3 a {
+    font-size: 18px;
+  }
 }
