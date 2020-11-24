@@ -1,7 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # The-Next-Web-Clone
-This project aims to create a Heat Map of the page SmashingMagazine.com, The page works best on a 1366x768 resolution and using the Chrome browser.
+This project aims to create a Clone of the page thenextweb.com, The page works best on a all resolutions and using the Chrome browser.
 
 
 
@@ -16,7 +16,7 @@ This project aims to create a Heat Map of the page SmashingMagazine.com, The pag
 
 ## Live Demo
 
-[Live Demo Link](https://marilirulita.github.io/The-Next-Web-Clone/.)
+[Live Demo Link](https://marilirulita.github.io/The-Next-Web-Clone/)
 
 👤 **Mar y Sol Bautista**
 
@@ -35,7 +35,7 @@ This project aims to create a Heat Map of the page SmashingMagazine.com, The pag
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/DsunilK/Smashingmagazine-Clone/issues/).
+Feel free to check the [issues page](https://github.com/marilirulita/The-Next-Web-Clone/issues).
 
 ## Show your support
 
