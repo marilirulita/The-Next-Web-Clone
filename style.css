@@ -382,7 +382,7 @@ header {
 
 .section3-div {
   display: grid;
-  grid-auto-rows: repeat(4, auto);
+  grid-auto-rows: auto;
 }
 
 .section3-div-title a {
