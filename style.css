@@ -1,5 +1,13 @@
 body {
   overflow-x: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-display {
+  display: flex;
 }
 
 body a {
@@ -7,12 +15,10 @@ body a {
 }
 
 nav {
-  display: flex;
   width: 100%;
 }
 
 .nav-div {
-  display: flex;
   flex-direction: column;
   width: 100%;
 }
@@ -31,19 +37,17 @@ nav {
 .nav1 {
   background-color: black;
   height: 2em;
-  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1em;
 }
 
-.nav1 ul,
-.nav2 ul {
-  display: flex;
-}
-
 .nav2-mobile {
   display: none;
+}
+
+footer {
+  width: 100%;
 }
 
 footer a {
@@ -57,14 +61,13 @@ footer a {
   white-space: nowrap;
 }
 
-#nav1-news {
+.nav1-news {
   color: white;
 }
 
 .nav2 {
   height: 3em;
   background-color: white;
-  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 0.5em;
@@ -112,7 +115,6 @@ header {
 }
 
 .cover-grad-img {
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
   background: transparent url(./assets/cover-gradient.png) no-repeat;
@@ -123,7 +125,6 @@ header {
 }
 
 .cover-grad {
-  display: flex;
   align-items: flex-end;
   padding: 15px;
   height: 91%;
@@ -168,7 +169,6 @@ header {
 }
 
 .article1-top {
-  display: flex;
   justify-content: space-between;
   color: white;
   width: auto;
@@ -181,7 +181,6 @@ header {
 }
 
 .article1-ul {
-  display: flex;
   flex-direction: row;
 }
 
@@ -242,7 +241,6 @@ header {
 }
 
 .section2-top {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 5px;
@@ -251,7 +249,6 @@ header {
 }
 
 .section2-top-right {
-  display: flex;
   justify-content: space-around;
   align-items: center;
 }
@@ -288,7 +285,6 @@ header {
   margin-bottom: 0;
   padding: 10px 10px 10px 70px;
   height: 20px;
-  display: flex;
 }
 
 .div1-top1 {
@@ -296,14 +292,12 @@ header {
   margin: 0;
   padding: 10px 10px 10px 70px;
   height: 30px;
-  display: flex;
   justify-content: center;
   flex-direction: column;
   color: black;
 }
 
 .div2 {
-  display: flex;
   flex-direction: column;
   justify-content: center;
 }
@@ -341,7 +335,6 @@ header {
 .section3-div-article1 {
   background-size: cover;
   background-repeat: no-repeat;
-  display: flex;
   flex-direction: column;
   justify-content: flex-end;
   height: 250px;
@@ -355,7 +348,6 @@ header {
 }
 
 .section3-div-aside {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   background: rgba(255, 68, 34, 0.08);
@@ -404,7 +396,6 @@ header {
 }
 
 .section3-div-list {
-  display: flex;
   flex-direction: column;
 }
 
@@ -519,13 +510,11 @@ header {
 }
 
 .flex-div {
-  display: flex;
   align-items: baseline;
 }
 
 .footer-top {
   background-color: #131313;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -535,26 +524,20 @@ header {
   background-color: black;
   color: #aaa;
   padding: 30px;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .footer-top-icons {
-  display: flex;
   margin-top: 20px;
 }
 
 .footer-top-icons li {
   border: 1px solid #464242;
   border-radius: 50%;
-  padding: 15px;
+  padding: 10px;
   margin: 5px;
   background: #464242;
-}
-
-.footer-bottom-icons {
-  display: flex;
 }
 
 .footer-bottom-icons li {
@@ -691,7 +674,11 @@ li::marker {
   }
 }
 
-@media screen and (max-width: 786px) {
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+
   .nav-1-right {
     visibility: hidden;
   }
@@ -816,8 +803,13 @@ li::marker {
   }
 
   .footer-bottom {
-    padding: 15px 30%;
+    padding: 15px;
     text-align: center;
     line-height: 1.3em;
+  }
+
+  .footer-bottom p {
+    width: 250px;
+    margin: 0 auto;
   }
 }

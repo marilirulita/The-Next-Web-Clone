@@ -21,7 +21,7 @@ This project aims to create a Clone of the page thenextweb.com, The page works b
 👤 **Mar y Sol Bautista**
 
 - GitHub: [@marilirulita](https://github.com/marilirulita)
-- Linkedin: [@marilirulita](https://www.linkedin.com/in/mar-y-sol-bautista-alvarez-5a6894151/)
+- Linkedin: [@marilirulita](https://www.linkedin.com/in/mar-y-sol-bautista-5a6894151/)
 - Twiter: [@marilirulita](https://twitter.com/marylirulita)
 
 
